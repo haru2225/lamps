@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 # データ（密度と圧力）
 density = np.array([1.3815, 1.5137, 1.6585, 1.8172, 1.9911, 2.1816])  # g/cm³
@@ -31,5 +32,11 @@ ax[1].set_title('Sound Speed Squared vs V/V0')
 ax[1].grid(True)
 
 plt.tight_layout()
-plt.show()
+
+# 保存先パス（ユーザーのデスクトップ）
+desktop_path = os.path.join(os.path.expanduser("~"), "Desktop", "cold_pressure_plot.png")
+
+# 画像ファイルとして保存
+plt.savefig(desktop_path, dpi=300)
+print(f"画像を保存しました: {desktop_path}")
 
