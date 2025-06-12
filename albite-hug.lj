@@ -74,7 +74,7 @@ fix             myhug all nphug  temp 300.0 300.0 500.0 z 300000.0  300000.0  15
 fix_modify myhug e0   -91572.036     p0 1.0 v0  50274770
 thermo          100
 
-dump 1  all xyz 100 albiteglass-shock-all.xyz
+dump 1  all xyz 100 albiteglass-shock-all-1.xyz
 
 timestep 0.0000005
 run            100000000
