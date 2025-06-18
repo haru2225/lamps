@@ -11,6 +11,8 @@ Albite結晶とAlbiteアモルファスに対する衝撃シュミレーショ�
 - `albite-data31`, `albite-data40`：結晶とアモルファスの初期構造データ
 - `albite-crystal-amorphous.lj`：結晶からアモルファス作成
 - `albite-random-amorphous.lj`：ランダムな原子配置からアモルファス作成
+- `albite-random-amorphous.xyz`：albite-random-amorphous.ljの最終的な構造データ
+- `albite-crystal-amorphous.xyz`：albite-crystal-amorphous.ljの最終的な構造データ
 - `XRD.py`：XRDパターン生成スクリプト（pymatgen使用）
 - `XRD-albite-crystal.png`, `XRD-albite-amorphous.png`：XRD画像
 
