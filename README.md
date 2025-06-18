@@ -22,7 +22,7 @@ mpirun -np X ~/lmp_mpi -in  Filename
 ex)mpirun -np 16 ~/lmp_mpi -in  albite-random-amorphous.lj
 
 
-・その他
+・その他:
 結晶構造データはAmerican Mineralogist Crystal Structure Database から得ています。
 
 
