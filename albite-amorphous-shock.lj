@@ -52,9 +52,11 @@ run 20000
 #0.0625=10Gpa
 unfix 1
 #fix myhug all nphug temp 0.026 0.026  1500.0   z 0.0625  0.0625 4000.0 drag 200.0
-fix myhug all nphug temp 0.026 0.026  6000.0   z 0.0625  0.0625 8000.0 drag 200.0 pchain 1 
-#fix myhug all nphug temp 0.026 0.026  4500.0   z 0.0625  0.0625 5500.0 drag 200.0 pchain 1 
-#fix myhug all nphug temp 0.026 0.026  3000.0   z 0.0625  0.0625 4800.0 drag 200.0 pchain 1
+#fix myhug all nphug temp 0.026 0.026  6000.0   z 0.0625  0.0625 8000.0 drag 200.0 pchain 1 
+fix myhug all nphug temp 0.026 0.026  10000.0   z 0.0625  0.0625 12000.0 drag 200.0 pchain 1
+#fix myhug all nphug temp 0.026 0.026  15000.0   z 0.0625  0.0625 17000.0 drag 200.0 pchain 1
+
+
 
 fix_modify myhug e0   -8.310515     p0 0.00    v0 139646.9  
 
@@ -78,9 +80,10 @@ dump 1  all xyz 100 albiteglass-shock-amorphous-2.xyz
 #dump 1  all xyz 100 albiteglass-shock-amorphous-3.xyz
 #dump 1  all xyz 100 albiteglass-shock-amorphous-4.xyz
 
-#0.5ns=run 125000
+#0.5ns=run 3125000
+run 3125000
 
-#6.4ns
-run           5000000
+
+run           50000000
 
                           
