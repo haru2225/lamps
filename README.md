@@ -15,6 +15,8 @@ Albite結晶とAlbiteアモルファスに対する衝撃シュミレーショ�
 - `albite-crystal-amorphous.xyz`：albite-crystal-amorphous.ljの最終的な構造データ
 - `XRD.py`：XRDパターン生成スクリプト（pymatgen使用）
 - `XRD-albite-crystal.png`, `XRD-albite-amorphous.png`：XRD画像
+- `Q_distributions.py`：アモルファスのQ4の計算
+- `Al-O_bonds`,`Si-O_bonds`:Q4の計算のためのデータ
 
 ・実装
 以下のコマンドで実装
