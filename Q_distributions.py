@@ -1,6 +1,6 @@
 from collections import Counter
 
-datafile = "Si-O_bonds"  # LAMMPSのdataファイル名
+datafile = "Al-O_bonds"  # LAMMPSのdataファイル名
 
 # === Bondsセクションの抽出 ===
 reading_bonds = False
