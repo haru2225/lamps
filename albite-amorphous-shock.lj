@@ -51,12 +51,15 @@ run 20000
 #2000=80ps
 #0.0625=10Gpa
 unfix 1
-#fix myhug all nphug temp 0.026 0.026  1500.0   z 0.0625  0.0625 4000.0 drag 200.0
-#fix myhug all nphug temp 0.026 0.026  6000.0   z 0.0625  0.0625 8000.0 drag 200.0 pchain 1 
-fix myhug all nphug temp 0.026 0.026  10000.0   z 0.0625  0.0625 12000.0 drag 200.0 pchain 1
-#fix myhug all nphug temp 0.026 0.026  15000.0   z 0.0625  0.0625 17000.0 drag 200.0 pchain 1
-#fix myhug all nphug temp 0.026 0.026  20000.0   z 0.0625  0.0625 22000.0 drag 200.0 pchain 1
-#fix myhug all nphug temp 0.026 0.026  28000.0   z 0.0625  0.0625 30000.0 drag 200.0 pchain 1
+#fix myhug all nphug temp 0.026 0.026  6000.0   z 0.0625  0.0625 8000.0 drag 200.0 pchain 1
+#fix myhug all nphug temp 0.026 0.026  10000.0   z 0.0625  0.0625 12000.0 drag 200.0 pchain 1
+# fix myhug all nphug temp 0.026 0.026 15000.0  z 0.0625 0.0625 17000.0 drag 200.0 pchain 1
+# fix myhug all nphug temp 0.026 0.026 20000.0  z 0.0625 0.0625 22000.0 drag 200.0 pchain 1
+#fix myhug all nphug temp 0.026 0.026 28000.0  z 0.0625 0.0625 30000.0 drag 200.0 pchain 1
+#fix myhug all nphug temp 0.026 0.026 350000.0  z 0.0625 0.0625 37000.0 drag 200.0 pchain 1
+ fix myhug all nphug temp 0.026 0.026 480000.0  z 0.0625 0.0625 50000.0 drag 200.0 pchain 1
+# fix myhug all nphug temp 0.026 0.026 680000.0  z 0.0625 0.0625 70000.0 drag 200.0 pchain 1
+
 
 fix_modify myhug e0   -8.310515     p0 0.00    v0 139646.9  
 
@@ -77,12 +80,14 @@ thermo_style custom step temp ke epair econserve pzz v_tau lz f_myhug v_dele v_u
 fix stress all print 10 "${time} ${pzz} ${tau} " screen no append stress_vs_t.dat title '#time pzz tau (no drag)'
 
 #dump 1  all xyz 100 albiteglass-shock-amorphous.xyz
-dump 1  all xyz 100 albiteglass-shock-amorphous-2.xyz
+#dump 1  all xyz 100 albiteglass-shock-amorphous-2.xyz
 #dump 1  all xyz 100 albiteglass-shock-amorphous-3.xyz
 #dump 1  all xyz 100 albiteglass-shock-amorphous-4.xyz
 #dump 1  all xyz 100 albiteglass-shock-amorphous-5.xyz
 #dump 1  all xyz 100 albiteglass-shock-amorphous-6.xyz
-
+dump 1 all xyz 100 albiteglass-shock-amorphous-7.xyz
+#dump 1 all xyz 100 albiteglass-shock-amorphous-8.xyz
+#dump 1 all xyz 100 albiteglass-shock-amorphous-9.xyz
 
 #0.5ns=run 3125000
 run 3125000

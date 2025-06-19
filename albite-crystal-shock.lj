@@ -52,12 +52,14 @@ run 20000
 #0.0625=10Gpa
 unfix 1
 #fix myhug all nphug temp 0.026 0.026  1500.0   z 0.0625  0.0625 4000.0 drag 200.0
-#fix myhug all nphug temp 0.026 0.026  6000.0   z 0.0625  0.0625 8000.0 drag 200.0 pchain 1 
-fix myhug all nphug temp 0.026 0.026  10000.0   z 0.0625  0.0625 12000.0 drag 200.0 pchain 1
-#fix myhug all nphug temp 0.026 0.026  15000.0   z 0.0625  0.0625 17000.0 drag 200.0 pchain 1
-#fix myhug all nphug temp 0.026 0.026  20000.0   z 0.0625  0.0625 22000.0 drag 200.0 pchain 1
-#fix myhug all nphug temp 0.026 0.026  28000.0   z 0.0625  0.0625 30000.0 drag 200.0 pchain 1
-
+#fix myhug all nphug temp 0.026 0.026  6000.0   z 0.0625  0.0625 8000.0 drag 200.0 pchain 1
+#fix myhug all nphug temp 0.026 0.026  10000.0   z 0.0625  0.0625 12000.0 drag 200.0 pchain 1
+# fix myhug all nphug temp 0.026 0.026 15000.0  z 0.0625 0.0625 17000.0 drag 200.0 pchain 1
+# fix myhug all nphug temp 0.026 0.026 20000.0  z 0.0625 0.0625 22000.0 drag 200.0 pchain 1
+#fix myhug all nphug temp 0.026 0.026 28000.0  z 0.0625 0.0625 30000.0 drag 200.0 pchain 1
+#fix myhug all nphug temp 0.026 0.026 350000.0  z 0.0625 0.0625 37000.0 drag 200.0 pchain 1
+ fix myhug all nphug temp 0.026 0.026 480000.0  z 0.0625 0.0625 50000.0 drag 200.0 pchain 1
+# fix myhug all nphug temp 0.026 0.026 680000.0  z 0.0625 0.0625 70000.0 drag 200.0 pchain 1
 
 
 fix_modify myhug e0  -8.3804147     p0 0.00    v0  229915.87
@@ -84,6 +86,9 @@ dump 1  all xyz 100 albiteglass-shock-crystall-3.xyz
 #dump 1  all xyz 100 albiteglass-shock-crystall-4.xyz
 #dump 1  all xyz 100 albiteglass-shock-crystall-5.xyz
 #dump 1  all xyz 100 albiteglass-shock-crystall-6.xyz
+dump 1 all xyz 100 albiteglass-shock-crystall-7.xyz
+#dump 1 all xyz 100 albiteglass-shock-crystall-8.xyz
+#dump 1 all xyz 100 albiteglass-shock-crystall-9.xyz
 
 
 #0.5ns=run 3125000
